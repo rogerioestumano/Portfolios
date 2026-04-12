@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+#container {
+    background: url(./img/background.jpeg);
+    padding-bottom: 250px;
+}
+
+#botao-entrar {
+    background-color: #e50914;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 18px;
+    padding-left: 18px;
+    border: 0;
+    border-radius: 3px;
+    float: right;
+    cursor: pointer;
+}
+
+#cabecalho{
+    padding: 28px 56px;
+}
+
+h1 {
+    text-align:center;
+    font-size: 56px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+
+#paragrafo-assinar {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#paragrafo-quer-assistir {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+input {
+    width: 390px;
+    padding-left: 10px;
+}
+
+#botao-email {
+    width: 180px;
+    background-color: #e50914;
+    border: 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#formulario {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 50px;
+}
+
+#rodape {
+    background-color: black;
+    border-top: 6px solid #303030;
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#botao-pergunta {
+    width: 1200px;
+    background-color: #303030;
+    height: 80px;
+    font-size: 25px;
+    border: 0;
+    margin-top: 40px;
+    text-align: left;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+}
+
+#imagem-pergunta {
+    float: right;
+    margin-top: 5px;
+}
+
+#pergunta{
+    width: 1200px;
+    background-color: #303030;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+#assinatura {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
