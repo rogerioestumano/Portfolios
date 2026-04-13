@@ -9,6 +9,7 @@
 #container {
     background: url(./img/background.jpeg);
     padding-bottom: 250px;
+    margin-top: 1px;
 }
 
 #botao-entrar {
@@ -139,43 +140,17 @@ h2 {
    ========================================= */
 
 @media (max-width: 800px) {
-    
-    /* Ajusta o título principal para caber na tela e diminui a fonte */
+    /* Isso vai forçar o botão a caber na tela do celular */
+    #botao-pergunta, #pergunta {
+        width: 100%; 
+        max-width: 90vw; /* Usa no máximo 90% da largura da tela */
+        box-sizing: border-box;
+    }
+
+    /* Isso vai garantir que o título principal também não vaze */
     h1 {
         width: 100%;
-        font-size: 36px;
-        margin-top: 60px;
         padding: 0 15px;
-    }
-
-    /* Empilha o input de email e o botão, ao invés de deixá-los lado a lado */
-    #formulario {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    input {
-        width: 90%;
-        margin-bottom: 15px; /* Dá um espaço entre o input e o botão */
-        height: 50px;
-    }
-
-    #botao-email {
-        width: 90%;
-        height: 50px;
-        font-size: 20px;
-    }
-
-    /* Ajusta as caixas gigantes de perguntas frequentes */
-    #botao-pergunta, #pergunta {
-        width: 90%; /* Muda de 1200px para 90% da tela */
-        font-size: 18px;
-        height: auto;
-        padding: 15px;
-    }
-
-    #cabecalho {
-        padding: 20px;
+        box-sizing: border-box;
     }
 }
