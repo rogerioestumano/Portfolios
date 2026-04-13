@@ -24,6 +24,10 @@
     cursor: pointer;
 }
 
+#botao-entrar:hover {
+    opacity: 0.8;
+}
+
 #cabecalho{
     padding: 28px 56px;
 }
@@ -52,6 +56,7 @@ h1 {
 input {
     width: 390px;
     padding-left: 10px;
+    caret-color: black;
 }
 
 #botao-email {
@@ -60,6 +65,10 @@ input {
     border: 0;
     font-size: 25px;
     cursor: pointer;
+}
+
+#botao-email:hover {
+    opacity: 0.8;
 }
 
 #formulario {
@@ -98,6 +107,13 @@ h2 {
 #imagem-pergunta {
     float: right;
     margin-top: 5px;
+    transform: rotate(45deg);
+}
+
+#imagem-pergunta-girar {
+    float: right;
+    margin-top: 5px;
+    transform: rotate(90deg);
 }
 
 #pergunta{
@@ -108,9 +124,58 @@ h2 {
     margin-top: 3px;
     padding: 20px;
     font-size: 25px;
+    display: none;
 }
 
 #assinatura {
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* =========================================
+   REGRAS DE RESPONSIVIDADE (CELULARES E TABLETS)
+   ========================================= */
+
+@media (max-width: 800px) {
+    
+    /* Ajusta o título principal para caber na tela e diminui a fonte */
+    h1 {
+        width: 100%;
+        font-size: 36px;
+        margin-top: 60px;
+        padding: 0 15px;
+    }
+
+    /* Empilha o input de email e o botão, ao invés de deixá-los lado a lado */
+    #formulario {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    input {
+        width: 90%;
+        margin-bottom: 15px; /* Dá um espaço entre o input e o botão */
+        height: 50px;
+    }
+
+    #botao-email {
+        width: 90%;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    /* Ajusta as caixas gigantes de perguntas frequentes */
+    #botao-pergunta, #pergunta {
+        width: 90%; /* Muda de 1200px para 90% da tela */
+        font-size: 18px;
+        height: auto;
+        padding: 15px;
+    }
+
+    #cabecalho {
+        padding: 20px;
+    }
 }
